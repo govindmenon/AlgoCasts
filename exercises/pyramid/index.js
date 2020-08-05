@@ -14,6 +14,16 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+//Solution #1
+function pyramid(n) {
+    const total = n*2 - 1;
+
+    for(let i=0;i<n;i++){
+        let nHash = (i+1)*2 - 1;
+        let nSpace = total - nHash;
+
+        console.log(" ".repeat(nSpace/2)+"#".repeat(nHash)+" ".repeat(nSpace/2));
+    }
+}
 
 module.exports = pyramid;
