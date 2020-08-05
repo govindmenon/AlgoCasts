@@ -17,6 +17,13 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+//Solution #1
+function steps(n) {
+    for(let i=0;i<n;i++){
+        let hashes = "#".repeat(i+1);
+        let spaces = " ".repeat(n - i - 1);
+        console.log(hashes+spaces);
+    }
+}
 
 module.exports = steps;
